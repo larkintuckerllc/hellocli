@@ -1,6 +1,9 @@
 """Hello CLI."""
+import click
 
 
-def cli():
-    """Print greeting."""
-    print('Hello World')
+@click.command()
+@click.argument('phrase')
+def cli(phrase):
+    """Print phrase."""
+    print(phrase)
