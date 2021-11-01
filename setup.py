@@ -9,7 +9,7 @@ with open('requirements.txt') as f:
 setup(
     entry_points={
         "console_scripts": [
-            "hellocli.main:cli"
+            "hellocli=hellocli.main:cli"
         ],
     },
     install_requires=install_requires,
